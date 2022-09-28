@@ -22,5 +22,7 @@ public class Main {
         System.out.println(people);
         Collections.sort(people, comparator);
         System.out.println(people);
+        people.removeIf((Person p)->p.getAge()<18);
+        System.out.println(people);
     }
 }
